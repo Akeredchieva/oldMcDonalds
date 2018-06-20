@@ -1,4 +1,7 @@
-package entity;
+import entity.Animal;
+import entity.Cow;
+import entity.Dog;
+import entity.Duck;
 
 /**
  * Class with the lyrics of the song.

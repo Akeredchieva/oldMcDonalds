@@ -11,21 +11,11 @@ public class Dog extends Animal {
     private static final String NAME = "Dog";
     private static final String SOUND = "Woof";
 
-    private String sound;
-
     /**
      * Constructor without input parameters to set the name and the sound of the animal.
      */
     public Dog() {
-        super(NAME);
-        this.setSound();
-    }
-
-    /**
-     * To set the value of the sound that animal makes.
-     */
-    private void setSound() {
-        this.sound = SOUND;
+        super(NAME, SOUND);
     }
 
     /**
@@ -33,6 +23,6 @@ public class Dog extends Animal {
      * @return String with the value of the sound that the animal makes.
      */
     public String makeSound() {
-        return this.sound;
+        return this.getSound();
     }
 }

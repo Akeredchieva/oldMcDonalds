@@ -9,13 +9,15 @@ abstract public class Animal {
 
     // The name of the animal
     private String name;
+    private String sound;
 
     /**
      * Base constructor of the class which set the name of the animal
      * @param name the input name of the animal
      */
-    protected Animal(String name) {
+    protected Animal(String name, String sound) {
         this.setName(name);
+        this.setSound(sound);
     }
 
     /**
@@ -32,6 +34,14 @@ abstract public class Animal {
      */
     public String getName() {
         return name;
+    }
+
+    public String getSound() {
+        return sound;
+    }
+
+    public void setSound(String sound) {
+        this.sound = sound;
     }
 
     /**
